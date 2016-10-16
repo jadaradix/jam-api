@@ -4,9 +4,15 @@
   "license": "Unlicense",
   "author": "James Garner <j@jada.io>",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha test/unit test/api --reporter spec"
   },
   "dependencies": {
     "restify": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.0"
   }
 }

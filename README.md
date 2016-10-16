@@ -23,14 +23,23 @@ yarn
 
 ## Run
 
-`yarn start` is currently broken on OS X, so use `npm start` instead.
-
 ```
 npm start
 ```
 
-The default port is 8080. You can override this with the environment variable `JAM_API_PORT`:
+The default port is 8080. You can override this with the environment variable `JAM_API_PORT`.
 
 ```
 JAM_API_PORT=8081 npm start
+```
+
+
+## Test
+
+Tests are written with Mocha, Chai and SuperTest.
+
+For SuperTest API tests to work, you'll need to run `npm start` first because SuperTest makes real requests. The tests also respect `JAM_API_PORT` and fall back to port 8080.
+
+```
+npm test
 ```
