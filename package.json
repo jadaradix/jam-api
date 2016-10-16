@@ -1,0 +1,12 @@
+{
+  "name": "jam-api",
+  "version": "1.0.0",
+  "license": "Unlicense",
+  "author": "James Garner <j@jada.io>",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "restify": "^4.1.1"
+  }
+}
