@@ -6,6 +6,8 @@ const port = process.env.JAM_API_PORT || 8080;
 
 const products = require("./lib/products");
 
+server.use(restify.CORS());
+
 server.get("/products", (req, res, next) => {
   res.send(products);
   return next();
