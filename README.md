@@ -1,13 +1,15 @@
 # jam-api
 
-Jimbo's Ad Maker API
+Jimbo's Ad Maker API serves products RESTfully via restify. The following routes are available:
+ * `/GET products` Returns an array of product objects with id, name and other properties
+ * `/GET products/:id` Returns a product object; returns 404 if there's no product with that id
 
 
 ## Prerequisites
 
-### yarn
+### (Optional) yarn
 
-yarn is a superior package manager, working as a replacement for the npm CLI. I recommend you use yarn over npm although a regular `npm install` will work. Install yarn:
+yarn is a superior package manager to npm, working as a replacement for the usual npm CLI.
 
 ```
 npm install -g yarn
@@ -20,6 +22,7 @@ npm install -g yarn
 yarn
 ```
 
+If you don't want to run `yarn` you can run `npm install` instead.
 
 ## Run
 
